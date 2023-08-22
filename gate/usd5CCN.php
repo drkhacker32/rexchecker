@@ -37,7 +37,7 @@ $sk = $_GET['sec'];
 if(!$sk){
   #$sk = "";
   $sks = array(
-    "sk_live_q2EVOc6DEh7ODm8l6AQv1mzo",
+    "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",
     "sk_live_40nB0WoYZffkHrFRtnBd8LoV00u6NNbq1k",
     "sk_live_r3SkUDY2IoOyV5kkejEgwPh5"
 );
@@ -153,7 +153,7 @@ break;
 //=================== [ RESPONSES ] ===================//
 
 if(strpos($result2, '"seller_message": "Payment complete."' )) {
-    echo 'CHARGED</span>  </span>CC:  '.$lista.'</span>  <br>➤ Response: $'.$amt.' CCN Charged ✅ SoilMan0_0  <br> ➤ Receipt : <a href='.$receipturl.'>Here</a><br>';
+    echo 'CHARGED</span>  </span>CC:  '.$lista.'</span>  <br>➤ Response: $'.$amt.' CCN Charged ✅ T-REX  <br> ➤ Receipt : <a href='.$receipturl.'>Here</a><br>';
 }
 elseif(strpos($result2,'"cvc_check": "pass"')){
     echo 'CVV</span>  </span>CC:  '.$lista.'</span>  <br>Result: CVV LIVE</span><br>';
@@ -207,7 +207,7 @@ elseif(strpos($result2, "lost_card" )) {
     echo 'DEAD</span>  </span>CC:  '.$lista.'</span>  <br>Result: LOST CARD</span><br>';
 }
 elseif(strpos($result2, "lost_card" )) {
-    echo 'DEAD</span>  </span>CC:  '.$lista.'</span>  <br>Result: LOST CARD</span></span>  <br>Result: CHECKER BY checker</span> <br>';
+    echo 'DEAD</span>  </span>CC:  '.$lista.'</span>  <br>Result: LOST CARD</span></span>  <br>Result: CHECKER BY T-REX</span> <br>';
 }
 
 elseif(strpos($result2, "stolen_card" )) {
