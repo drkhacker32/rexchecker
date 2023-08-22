@@ -25,7 +25,7 @@
        <div class="card">
         <div class="card-body text-center">
          <h4 class="mb-2">
-          <strong>♕︎𝙅𝙚𝙩𝙞𝙭 𝙎𝙆 𝘽𝘼𝙎𝙀𝘿 𝘾𝙃𝙀𝘾𝙆𝙀𝙍♕︎</strong>
+          <strong>T-REX SK BASED CHECKER</strong>
          </h4>
          <textarea rows="12" class="form-control text-center form-checker mb-2" placeholder="DROP UR CARDS HERE"></textarea>
          <textarea rows="1" class="form-control text-center" style="width: 70%; float: left ;" id="sec" placeholder="DROP SK KEY IN HERE"></textarea>
